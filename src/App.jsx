@@ -17,6 +17,7 @@ function App() {
         loading={loading}
       ></PostcodeSearch>
       <RestaurantList
+        setRestaurants={setRestaurants}
         restaurants={restaurants}
         loading={loading}
       ></RestaurantList>

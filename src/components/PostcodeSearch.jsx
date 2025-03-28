@@ -48,6 +48,7 @@ const PostcodeSearch = ({ setRestaurants, loading, setLoading }) => {
       <form onSubmit={handleSubmit}>
         <FaLocationDot className={styles.icon} />
         <input
+          className={styles.postcodeInput}
           id="postcode-input"
           type="text"
           placeholder="Enter your postcode in the format A1 2BC"
@@ -64,7 +65,7 @@ const PostcodeSearch = ({ setRestaurants, loading, setLoading }) => {
       ) : loading ? (
         <p>Loading...</p>
       ) : (
-        postcode && <h2>Restaurants in and around {postcode.toUpperCase()}</h2>
+        postcode && <h2>Restaurants near {postcode.toUpperCase()}</h2>
       )}
       {}
     </section>
