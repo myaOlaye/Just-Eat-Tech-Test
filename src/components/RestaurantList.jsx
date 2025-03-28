@@ -1,9 +1,8 @@
 import React from "react";
 import RestaurantCard from "./RestaurantCard";
 
-const RestaurantList = ({ restaurants }) => {
-  console.log(restaurants);
-  return (
+const RestaurantList = ({ restaurants, loading }) => {
+  return loading ? null : (
     <>
       {restaurants.map((restaurant) => {
         return (

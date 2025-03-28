@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import isValidPostcode from "../utilities/isValidPostcode";
 import axios from "axios";
 
-const PostcodeSearch = ({ setRestaurants }) => {
+const PostcodeSearch = ({ setRestaurants, loading, setLoading }) => {
   const [postcode, setPostcode] = useState("");
   const [postcodeInput, setPostcodeInput] = useState("");
   const [inputError, setInputError] = useState("");
-  const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
   useEffect(() => {

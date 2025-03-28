@@ -4,12 +4,20 @@ import PostcodeSearch from "./components/PostcodeSearch";
 import RestaurantList from "./components/RestaurantList";
 
 function App() {
+  const [loading, setLoading] = useState(false);
   const [restaurants, setRestaurants] = useState([]);
 
   return (
     <>
-      <PostcodeSearch setRestaurants={setRestaurants}></PostcodeSearch>
-      <RestaurantList restaurants={restaurants}></RestaurantList>
+      <PostcodeSearch
+        setRestaurants={setRestaurants}
+        setLoading={setLoading}
+        loading={loading}
+      ></PostcodeSearch>
+      <RestaurantList
+        restaurants={restaurants}
+        loading={loading}
+      ></RestaurantList>
     </>
   );
 }
