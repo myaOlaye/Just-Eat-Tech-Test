@@ -12,7 +12,7 @@ const RestaurantList = ({ restaurants, loading }) => {
   return loading ? null : (
     <section className={styles.restaurantListSection}>
       {restaurants.length > 0 && (
-        <div>
+        <div className={styles.orderByRatingDiv}>
           <input
             type="checkbox"
             name="orderByRating"
@@ -20,18 +20,22 @@ const RestaurantList = ({ restaurants, loading }) => {
             checked={orderByRating}
             onChange={() => setOrderByRating(!orderByRating)}
           />
-          <label htmlFor="orderByRating">Order by rating</label>
+          <label htmlFor="orderByRating" className={styles.orderByRatingLabel}>
+            Order by rating
+          </label>
         </div>
       )}
 
-      {sortedRestaurants.map((restaurant) => {
-        return (
-          <RestaurantCard
-            key={restaurant.id}
-            restaurant={restaurant}
-          ></RestaurantCard>
-        );
-      })}
+      <div className={styles.restaurantList}>
+        {sortedRestaurants.map((restaurant) => {
+          return (
+            <RestaurantCard
+              key={restaurant.id}
+              restaurant={restaurant}
+            ></RestaurantCard>
+          );
+        })}
+      </div>
     </section>
   );
 };

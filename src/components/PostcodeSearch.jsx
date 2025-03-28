@@ -48,6 +48,7 @@ const PostcodeSearch = ({ setRestaurants, loading, setLoading }) => {
       <form onSubmit={handleSubmit}>
         <FaLocationDot className={styles.icon} />
         <input
+          className={styles.postcodeInput}
           id="postcode-input"
           type="text"
           placeholder="Enter your postcode in the format A1 2BC"
