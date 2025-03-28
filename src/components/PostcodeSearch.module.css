@@ -1,0 +1,41 @@
+.postcodeSearchSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+}
+
+input {
+  width: 100%;
+  margin-right: 8px;
+  padding: 5px;
+}
+
+form {
+  display: flex;
+  width: 70%;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #ff8000;
+}
+
+button {
+  background-color: black;
+  border-radius: 3px;
+  border-width: 0;
+  color: whitesmoke;
+  padding: 7px;
+}
+
+.inputError {
+  font-size: 0.8rem;
+}
+
+h2 {
+  align-self: flex-start;
+  font-size: 1.3rem;
+}
