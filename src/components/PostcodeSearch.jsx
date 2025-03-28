@@ -18,13 +18,14 @@ const PostcodeSearch = ({ setRestaurants }) => {
           `http://localhost:3001/api/restaurants/${postcode.replace(/\s/g, "")}`
         )
         .then(({ data: { restaurants } }) => {
+          if (restaurants.length === 0) {
+            setError("Sorry, we are not operating in your area yet.");
+          }
           setRestaurants(restaurants.slice(0, 10));
           setLoading(false);
         })
         .catch(() => {
-          setError(
-            `Error retrieving restaurants in and near ${postcode}. Please try again later.`
-          );
+          setError("Sorry, something went wrong. Please try again later.");
         });
     }
   }, [postcode]);
