@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import isValidPostcode from "../utilities/isValidPostcode";
 import axios from "axios";
+import styles from "./PostcodeSearch.module.css";
+import { FaLocationDot } from "react-icons/fa6";
 
 const PostcodeSearch = ({ setRestaurants, loading, setLoading }) => {
   const [postcode, setPostcode] = useState("");
@@ -41,13 +43,14 @@ const PostcodeSearch = ({ setRestaurants, loading, setLoading }) => {
   };
 
   return (
-    <>
-      <h2>Search for Restaurants in your Area</h2>
+    <section className={styles.postcodeSearchSection}>
+      <h1 className={styles.heading}>Search for restaurants in your area</h1>
       <form onSubmit={handleSubmit}>
+        <FaLocationDot className={styles.icon} />
         <input
           id="postcode-input"
           type="text"
-          placeholder="Please enter your postcode"
+          placeholder="Enter your postcode in the format A1 2BC"
           value={postcodeInput}
           onChange={(e) => {
             setPostcodeInput(e.target.value);
@@ -55,16 +58,16 @@ const PostcodeSearch = ({ setRestaurants, loading, setLoading }) => {
         />
         <button type="submit">Search</button>
       </form>
-      <p>{inputError}</p>
+      <p className={styles.inputError}>{inputError}</p>
       {error ? (
         <p>{error}</p>
       ) : loading ? (
         <p>Loading...</p>
       ) : (
-        postcode && <h3>Restaurants near {postcode}</h3>
+        postcode && <h2>Restaurants in and around {postcode.toUpperCase()}</h2>
       )}
       {}
-    </>
+    </section>
   );
 };
 

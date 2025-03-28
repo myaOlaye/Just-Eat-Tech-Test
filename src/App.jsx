@@ -2,6 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import PostcodeSearch from "./components/PostcodeSearch";
 import RestaurantList from "./components/RestaurantList";
+import Header from "./components/Header";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -9,6 +10,7 @@ function App() {
 
   return (
     <>
+      <Header></Header>
       <PostcodeSearch
         setRestaurants={setRestaurants}
         setLoading={setLoading}
