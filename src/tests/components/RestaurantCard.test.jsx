@@ -31,7 +31,7 @@ describe("RestaurantCard", () => {
 
   it("renders the restaurant address", () => {
     render(<RestaurantCard restaurant={mockRestaurant} />);
-    expect(screen.getByText("London, 123 Food Street")).toBeInTheDocument();
+    expect(screen.getByText("123 Food Street, London")).toBeInTheDocument();
   });
 
   it("renders the restaurant logo with the correct src", () => {
