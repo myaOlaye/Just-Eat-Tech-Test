@@ -35,7 +35,9 @@ const PostcodeSearch = ({ setRestaurants }) => {
       setPostcode(postcodeInput);
       setInputError("");
     } else
-      setInputError("Please enter a valid postcode in the format KT23 4HL");
+      setInputError(
+        "Please enter a valid postcode in the correct format (e.g., A1 2BC)."
+      );
   };
 
   return (
@@ -43,6 +45,7 @@ const PostcodeSearch = ({ setRestaurants }) => {
       <h2>Search for Restaurants in your Area</h2>
       <form onSubmit={handleSubmit}>
         <input
+          id="postcode-input"
           type="text"
           placeholder="Please enter your postcode"
           value={postcodeInput}
