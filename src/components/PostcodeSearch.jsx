@@ -18,7 +18,7 @@ const PostcodeSearch = ({ setRestaurants }) => {
           `http://localhost:3001/api/restaurants/${postcode.replace(/\s/g, "")}`
         )
         .then(({ data: { restaurants } }) => {
-          setRestaurants(restaurants);
+          setRestaurants(restaurants.slice(0, 10));
           setLoading(false);
         })
         .catch(() => {
@@ -55,6 +55,8 @@ const PostcodeSearch = ({ setRestaurants }) => {
       <p>{inputError}</p>
       {error ? (
         <p>{error}</p>
+      ) : loading ? (
+        <p>Loading...</p>
       ) : (
         postcode && <h3>Restaurants near {postcode}</h3>
       )}
