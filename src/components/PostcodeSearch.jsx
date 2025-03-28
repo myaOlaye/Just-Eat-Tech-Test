@@ -64,7 +64,7 @@ const PostcodeSearch = ({ setRestaurants, loading, setLoading }) => {
       ) : loading ? (
         <p>Loading...</p>
       ) : (
-        postcode && <h2>Restaurants in and around {postcode.toUpperCase()}</h2>
+        postcode && <h2>Restaurants near {postcode.toUpperCase()}</h2>
       )}
       {}
     </section>
