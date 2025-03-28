@@ -9,7 +9,9 @@
 input {
   width: 100%;
   margin-right: 8px;
-  padding: 5px;
+  padding: 8px;
+  border: none;
+  border-radius: 15px;
 }
 
 form {
@@ -25,10 +27,11 @@ form {
 
 button {
   background-color: black;
-  border-radius: 3px;
+  border-radius: 15px;
   border-width: 0;
   color: whitesmoke;
   padding: 7px;
+  font-size: 0.8rem;
 }
 
 .inputError {
