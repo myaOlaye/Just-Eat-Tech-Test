@@ -10,7 +10,7 @@
 5. You can run `npm test` to run the tests and verify they pass
 
 
-Initial Plan for the app:
+## Initial Plan for the app:
 ![Just Eat Tech Challenge Plan](src/assets/Just%20Eat%20Tech%20Challenge%20-%20Plan.jpg)
 
 
