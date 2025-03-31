@@ -19,7 +19,7 @@ In the final product, I also added an 'order by rating' feature to demonstrate h
 ## Assumptions:
 
 ### 1. Cuisines Display:
-It’s acceptable to include categories such as ‘Deals’, ‘Collect Stamps’, and ‘Freebies’ under the cuisines section, as they are returned as part of the cuisines array in the API response. However, if we want to exclusively display specific cuisines like ‘Indian’, ‘Chinese’, or ‘Italian’, these categories could be filtered out.
+It’s acceptable to include categories such as ‘Deals’, ‘Collect Stamps’, and ‘Freebies’ under the cuisines section, as they are returned as part of the cuisines array in the API response. However, if we want to exclusively display cuisines like ‘Indian’, ‘Chinese’, or ‘Italian’, these categories could be filtered out.
 
 ### 2. Postcode Validation:
 The regex for validating UK postcodes, provided by the UK government ([UK Postcode Validation](https://assets.publishing.service.gov.uk/media/5a7f3ff4ed915d74e33f5438/Bulk_Data_Transfer_-_additional_validation_valid_from_12_November_2015.pdf)), is used for validating inputted postcodes. To ensure its reliability, I created unit tests that verify various postcodes (both valid and invalid) to confirm the regex works as expected.
