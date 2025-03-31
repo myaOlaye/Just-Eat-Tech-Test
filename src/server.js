@@ -8,8 +8,6 @@ app.use(cors());
 app.get("/api/restaurants/:postcode", (req, res) => {
   const { postcode } = req.params;
 
-  console.log(postcode);
-
   axios
     .get(
       `https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/${postcode}`

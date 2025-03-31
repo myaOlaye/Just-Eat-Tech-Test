@@ -67,7 +67,6 @@ const PostcodeSearch = ({ setRestaurants, loading, setLoading }) => {
       ) : (
         postcode && <h2>Restaurants near {postcode.toUpperCase()}</h2>
       )}
-      {}
     </section>
   );
 };

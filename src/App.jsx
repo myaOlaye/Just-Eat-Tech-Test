@@ -1,4 +1,3 @@
-import "./App.css";
 import { useState } from "react";
 import PostcodeSearch from "./components/PostcodeSearch";
 import RestaurantList from "./components/RestaurantList";

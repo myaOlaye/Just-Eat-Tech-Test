@@ -77,7 +77,7 @@ describe("App", () => {
       data: {
         restaurants: [],
       },
-    }); // Assuming Just Eat's API returns an empty array for a valid postcode with no resturants
+    });
 
     render(<App></App>);
 

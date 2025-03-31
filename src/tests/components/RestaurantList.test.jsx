@@ -1,5 +1,3 @@
-// want to test that when we select the order by rating check box, the restaurants ordered properly
-
 import { describe, expect, it } from "vitest";
 import RestaurantList from "../../components/RestaurantList";
 import { fireEvent, render, screen } from "@testing-library/react";
