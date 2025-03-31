@@ -1,5 +1,18 @@
 # Just Eat Tech Test - Mya Olaye
 
+## The Problem
+
+We are looking for you to find restaurant data and return this in an interface of your choice.
+
+Using the provided API, you will need to send a postcode to return a set of data. You’ll need to filter this data to focus solely on the restaurant information.
+
+You will notice that a lot of data is returned in the ‘restaurant object’ (and in the whole response!), but we’re only interested in the following pieces of data:
+
+- **Name**
+- **Cuisines**
+- **Rating** - as a number
+- **Address**
+
 ![Preview](./src/assets/Just%20Eat%20Tech%20Task%20-%20Preview.png)
 
 ## Viewing my Solution
