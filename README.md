@@ -1,6 +1,6 @@
 # Just Eact Tech Test - Mya Olaye
 
-![Preview](src/assets/Just-Eat-Tech-Task-Preview.png)
+![Preview](src/assets/Just-Eat-Tech-Task---Preview.png)
 
 ## Viewing my Solution:
 1. Clone the repo
