@@ -10,6 +10,8 @@
 5. Run `npm test` to run the tests and verify they pass
 
 ## Initial Plan for the App:
+Below is the rough wireframe and plan for the app component structure and state organisation.
+
 ![Just Eat Tech Challenge Plan](src/assets/Just%20Eat%20Tech%20Challenge%20-%20Plan.jpg)
 
 I also added an 'order by rating' feature to demonstrate how the returned restaurant list could be sorted at the user's request.
