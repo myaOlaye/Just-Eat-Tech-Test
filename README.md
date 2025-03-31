@@ -11,9 +11,10 @@
 
 
 Initial Plan for the app:
-![Preview](./src/assets/Just%20Eat%20Tech%20Task%20-%20Plan.png)
+![Just Eat Tech Challenge Plan](src/assets/Just%20Eat%20Tech%20Challenge%20-%20Plan.jpg)
 
-I also ended up adding a 'order by rating' feature to demonstrate how the returned restaurant list could be sorted at the users request. 
+
+I also ended up adding an 'order by rating' feature to demonstrate how the returned restaurant list could be sorted at the users request. 
 
 ## Assumptions
 
@@ -37,3 +38,8 @@ Restaurants offering deals could be highlighted with an eye-catching UI, such as
 
 ### More Detailed Restaurant Info:
 Add the ability to select a restaurant and view further details such as open and closing times, collection details, eta etc. 
+
+## Testing
+I have written **unit tests** for the `isValidPostcode` function to ensure its correctness, covering a range of valid and invalid postcode inputs. Additionally, I have written tests for the relevant components to ensure they behave as expected under different conditions.
+
+Furthermore, I have written **integration tests** to verify that the components render correctly and interact with each other as intended in various scenarios.
