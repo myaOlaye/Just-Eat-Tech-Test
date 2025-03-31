@@ -9,7 +9,13 @@
 4. Run `npm run dev` in a new terminal to start the development server and view the solution locally in your browser
 5. You can run `npm test` to run the tests and verify they pass
 
-## Assumptions:
+
+Initial Plan for the app:
+![Preview](./src/assets/Just%20Eat%20Tech%20Task%20-%20Plan.png)
+
+I also ended up adding a 'order by rating' feature to demonstrate how the returned restaurant list could be sorted at the users request. 
+
+## Assumptions
 
 ### Cuisines Display:
 It’s acceptable to include categories such as ‘Deals’, ‘Collect Stamps’, and ‘Freebies’ under the cuisines section, as they are returned as part of the cuisines array in the API response. However, if we want to exclusively display specific cuisines like ‘Indian’, ‘Chinese’, or ‘Italian’, these categories could be filtered out.
@@ -18,7 +24,7 @@ It’s acceptable to include categories such as ‘Deals’, ‘Collect Stamps�
 The regex for validating UK postcodes, provided by the UK government ([UK Postcode Validation](https://assets.publishing.service.gov.uk/media/5a7f3ff4ed915d74e33f5438/Bulk_Data_Transfer_-_additional_validation_valid_from_12_November_2015.pdf)), is used for validating inputted postcodes. To ensure its reliability, I created unit tests that verify various postcodes (both valid and invalid) to confirm the regex works as expected.
 
 
-## Proposed Improvements:
+## Potential Improvements
 
 ### Cuisine Filtering:
 The restaurant list could be filtered by specific cuisines. By leveraging the `cuisines` object in the API response, we can dynamically render a list of available cuisines based on the selected postcode. This would allow users to filter the restaurant list by selecting one or more preferred cuisines.
