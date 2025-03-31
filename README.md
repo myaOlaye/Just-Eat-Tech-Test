@@ -36,7 +36,7 @@ Add further sorting functionality, such as by distance, price, and availability 
 Restaurants offering deals could be highlighted with an eye-catching UI, such as displaying a colorful tag or banner. This would draw attention to the restaurants offering promotions. Additionally, a filter could be implemented that lets users filter restaurants by those offering deals, improving the user experience for deal-seekers.
 
 ### 4. More Detailed Restaurant Info:
-Add the ability to select a restaurant and view further details such as open and closing times, collection details, ETA, etc.
+The ability to select a restaurant and view further details such as open and closing times, collection details, ETA, etc. could be added.
 
 ## Testing:
 I have written **unit tests** for the `isValidPostcode` function to ensure its correctness, covering a range of valid and invalid postcode inputs. Additionally, I have written unit tests for the relevant components to ensure they behave as expected under different conditions.
