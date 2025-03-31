@@ -14,7 +14,7 @@ Below is the rough wireframe and plan for the app and state structure I made bef
 
 ![Just Eat Tech Challenge Plan](src/assets/Just%20Eat%20Tech%20Challenge%20-%20Plan.jpg)
 
-I also added an 'order by rating' feature to demonstrate how the returned restaurant list could be sorted at the user's request.
+In the final product, I also added an 'order by rating' feature to demonstrate how the returned restaurant list could be sorted at the user's request.
 
 ## Assumptions:
 
