@@ -1,4 +1,4 @@
-# Just Eact Tech Test - Mya Olaye
+# Just Eat Tech Test - Mya Olaye
 
 ![Preview](./src/assets/Just%20Eat%20Tech%20Task%20-%20Preview.png)
 
