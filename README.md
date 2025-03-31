@@ -2,14 +2,14 @@
 
 ![Preview](./src/assets/Just%20Eat%20Tech%20Task%20-%20Preview.png)
 
-## Viewing my Solution:
+## Viewing my Solution
 1. Clone the repo
 2. Run `npm install` to install the dependencies
 3. Run `node src/server.js` to start the proxy server 
 4. Run `npm run dev` in a new terminal to start the development server and view the solution locally in your browser
 5. Run `npm test` to run the tests and verify they pass
 
-## Initial Plan for the App:
+## Initial Plan for the App
 Below is the rough wireframe and plan for the app and state structure I made before writing any code.
 
 ![Just Eat Tech Challenge Plan](src/assets/Just%20Eat%20Tech%20Challenge%20-%20Plan.jpg)
