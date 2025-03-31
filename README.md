@@ -46,6 +46,6 @@ Restaurants offering deals could be highlighted with an eye-catching UI, such as
 Add the ability to select a restaurant and view further details such as open and closing times, collection details, eta etc. 
 
 ## Testing
-I have written **unit tests** for the `isValidPostcode` function to ensure its correctness, covering a range of valid and invalid postcode inputs. Additionally, I have written tests for the relevant components to ensure they behave as expected under different conditions.
+I have written **unit tests** for the `isValidPostcode` function to ensure its correctness, covering a range of valid and invalid postcode inputs. Additionally, I have written unitests for the relevant components to ensure they behave as expected under different conditions.
 
-Furthermore, I have written **integration tests** to verify that the components render correctly and interact with each other as intended in various scenarios.
+I have also written **integration tests** to verify that the components render correctly and interact with each other as intended in various scenarios.
