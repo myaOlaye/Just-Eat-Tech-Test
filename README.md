@@ -20,7 +20,7 @@ You will notice that a lot of data is returned in the ‘restaurant object’ (a
 2. Run `npm install` to install the dependencies
 3. Run `node src/server.js` to start the proxy server 
 4. Run `npm run dev` in a new terminal to start the development server and view the solution locally in your browser
-5. Run `npm test` to run the tests and verify they pass
+5. You can run `npm test` to run the tests and verify they pass
 
 ## Initial Plan for the App
 Below is the rough wireframe and plan for the app and state structure I made before writing any code.
