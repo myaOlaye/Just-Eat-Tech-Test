@@ -4,11 +4,18 @@ import axios from "axios";
 import styles from "./PostcodeSearch.module.css";
 import { FaLocationDot } from "react-icons/fa6";
 
-const PostcodeSearch = ({ setRestaurants, loading, setLoading }) => {
+const PostcodeSearch = ({
+  setRestaurants,
+  loading,
+  setLoading,
+  setCuisines,
+}) => {
   const [postcode, setPostcode] = useState("");
-  const [postcodeInput, setPostcodeInput] = useState("");
+  const [postcodeInput, setPostcodeInput] = useState([]);
   const [inputError, setInputError] = useState("");
   const [error, setError] = useState("");
+
+  // need to get the cuisines and put them in an array
 
   useEffect(() => {
     if (postcode) {
@@ -18,11 +25,12 @@ const PostcodeSearch = ({ setRestaurants, loading, setLoading }) => {
         .get(
           `http://localhost:3001/api/restaurants/${postcode.replace(/\s/g, "")}`
         )
-        .then(({ data: { restaurants } }) => {
+        .then(({ data: { restaurants, cuisineDetails } }) => {
           if (restaurants.length === 0) {
             setError("Sorry, we are not operating in your area yet.");
           }
           setRestaurants(restaurants.slice(0, 10));
+          setCuisines(cuisineDetails.map((cuisine) => cuisine.name));
           setLoading(false);
         })
         .catch(() => {

@@ -12,9 +12,16 @@ app.get("/api/restaurants/:postcode", (req, res) => {
     .get(
       `https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/${postcode}`
     )
-    .then(({ data: { restaurants } }) => {
-      res.status(200).send({ restaurants });
-    })
+    .then(
+      ({
+        data: {
+          restaurants,
+          metaData: { cuisineDetails },
+        },
+      }) => {
+        res.status(200).send({ restaurants, cuisineDetails });
+      }
+    )
     .catch((error) => {
       console.log(error);
     });
