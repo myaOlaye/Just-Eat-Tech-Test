@@ -27,6 +27,7 @@ const PostcodeSearch = ({ setRestaurants, loading, setLoading }) => {
         })
         .catch(() => {
           setError("Sorry, something went wrong. Please try again later.");
+          // forgot to set loading false here
         });
     }
   }, [postcode]);

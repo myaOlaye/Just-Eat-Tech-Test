@@ -17,6 +17,7 @@ app.get("/api/restaurants/:postcode", (req, res) => {
     })
     .catch((error) => {
       console.log(error);
+      // send message to client if fails too!
     });
 });
 
