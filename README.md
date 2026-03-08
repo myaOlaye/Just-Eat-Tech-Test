@@ -22,13 +22,6 @@ You will notice that a lot of data is returned in the ‘restaurant object’ (a
 4. Run `npm run dev` in a new terminal to start the development server and view the solution locally in your browser
 5. You can run `npm test` to run the tests and verify they pass
 
-## Initial Plan for the App
-Below is the rough wireframe and plan for the app and state structure I made before writing any code.
-
-![Just Eat Tech Challenge Plan](src/assets/Just%20Eat%20Tech%20Challenge%20-%20Plan.jpg)
-
-In the final product, I also added an 'order by rating' feature to demonstrate how the returned restaurant list could be sorted at the user's request.
-
 ## Assumptions
 
 ### 1. Cuisines Display:
